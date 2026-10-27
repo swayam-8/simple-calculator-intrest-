@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Interest Calculator</title>
+<link rel="stylesheet" href="styles.css"><script src="calculator.js" defer></script>
+</head>
+<body>
+<main>
+<header><span class="badge">MONEY, MADE CLEAR</span><h1>A little clarity.<br>A better plan.</h1><p>See how your money grows with simple interest.</p></header>
+<section class="calculator" aria-label="Simple interest calculator">
+<form id="calculator" novalidate>
+<h2>Make the numbers work</h2>
+<label for="currency">Currency</label><select id="currency"><option value="INR">INR — Indian rupee</option><option value="USD">USD — US dollar</option><option value="EUR">EUR — Euro</option><option value="GBP">GBP — British pound</option></select>
+<label for="principal">Principal amount</label><div class="input-wrap"><span id="currency-symbol" aria-hidden="true">₹</span><input id="principal" type="number" min="0.01" max="1000000000000" step="any" value="10000" required aria-describedby="error"></div>
+<label for="rate">Annual interest rate</label><div class="input-wrap"><input id="rate" type="number" min="0" max="1000" step="any" value="5" required aria-describedby="error"><span>%</span></div>
+<label for="duration">Time period</label><div class="time"><input id="duration" type="number" min="0.01" max="10000" step="any" value="3" required aria-label="Time period"><select id="unit" aria-label="Time unit"><option value="years">Years</option><option value="months">Months</option></select></div>
+<button type="submit">Calculate interest <span aria-hidden="true">↗</span></button>
+<button type="reset" class="secondary">Reset to example</button>
+<p id="error" class="error" role="alert"></p>
+</form>
+<div class="results" aria-live="polite" aria-atomic="true"><span class="eyebrow" id="result-status">YOUR ESTIMATED RETURN</span><p class="result-label">Total amount</p><strong id="total">₹11,500.00</strong><div class="bar" aria-hidden="true"><div id="principal-bar"></div></div><dl><div><dt><i class="dot principal"></i>Principal</dt><dd id="principal-result">₹10,000.00</dd></div><div><dt><i class="dot interest"></i>Interest earned</dt><dd id="interest-result">₹1,500.00</dd></div></dl><p id="breakdown" class="breakdown">₹10,000.00 × 5% × 3 years = ₹1,500.00 interest</p><p class="note">Simple interest is calculated on your original principal. It does not compound.</p></div>
+</section>
+<footer><p>THE MATH BEHIND IT</p><span>Interest = Principal × Annual rate × Time in years ÷ 100</span><small>For illustration only. Actual returns may vary with fees and taxes.</small></footer>
+</main>
+</body></html>
