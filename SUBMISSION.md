@@ -2,9 +2,9 @@
 
 ## Part 1 — GitHub UI (12 points)
 
-Required files are prepared locally. Commit and push them to the public `main` branch before submitting these URLs. Public visibility and remote publication have not been verified.
+The five Part 1 files have been verified on the public `main` branch through authenticated GitHub access. Review their contents against the current course rubric before submission.
 
-| Task | Points | URL to submit after publication |
+| Task | Points | Published file URL |
 | --- | --- | --- |
 | 1. Project README | 4 | https://github.com/swayam-8/simple-calculator-intrest-/blob/main/README.md |
 | 2. Apache 2.0 LICENSE | 2 | https://github.com/swayam-8/simple-calculator-intrest-/blob/main/LICENSE |
@@ -19,7 +19,7 @@ These tasks require a **real GitHub fork** of
 The simple-calculator-intrest- repository is not established as that fork.
 A Git clone alone does not establish a GitHub fork relationship.
 
-Follow the course lab in that fork. Capture the actual commands and complete output; do not submit sample or fabricated output. GitHub API access is blocked by this environment's current network policy. Git read access to the course repository succeeded, but API authentication is not yet verified.
+Follow the course lab in that fork. Capture the actual commands and complete output; do not submit sample or fabricated output. Authenticated GitHub connector access is verified for `swayam-8`. The browser still requires sign-in to create the course fork. Direct command-line network access is unavailable in the current environment.
 
 ### Task 6 — `forked-repo`
 
@@ -58,6 +58,6 @@ Save the command and actual output in `bug-fix-revert`. Verify the response iden
 
 ### Task 9 — `github-branches`
 
-In the course fork checkout, run `git fetch origin`, then capture `git branch -avv` in `github-branches`. This lists local/remote branch names and tracking status. The screenshot cuts off the end of Task 9; check the full lab instructions for any additional required command or exact expected branches.
+In the course fork checkout, run `git fetch origin`, then capture `git branch -avv` in `github-branches`. This lists local/remote branch names and tracking status. The current lab specifically requests `git branch -vv` with its real terminal output for the AI-graded submission. The peer-review alternative requests the fork's GitHub branches-page URL.
 
 None of the four Part 2 evidence files is claimed as complete. Generate them only after the corresponding operations really succeed.
